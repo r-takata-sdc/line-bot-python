@@ -1,0 +1,9 @@
+version: '3'
+services:
+  python:
+    build: .
+    volumes: 
+      - .:/code
+    ports:
+     - "5001:5000"
+    tty: true
